@@ -1,5 +1,6 @@
 # Notion-Highlights
 How to use:
+
 $ git clone https://github.com/Blausteinstaub/Notion-Highlights.git
 $ cd notion_highlights
 $ npm i

@@ -1,0 +1,17 @@
+{
+    "name": "notion-example",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon index.js",
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "@notionhq/client": "^1.0.4",
+        "dotenv": "^16.0.3",
+        "nodemon": "^2.0.20",
+        "notion-page-to-html": "^1.2.0"
+    }
+}

@@ -10,7 +10,7 @@
     },
     "dependencies": {
         "@notionhq/client": "^1.0.4",
-        "nodemon": "^3.0.0",
+        "nodemon": "^3.1.4",
         "dotenv": "^16.4.5",
         "notion-page-to-html": "^1.2.0"
     }

@@ -65,13 +65,14 @@ var clippings = readFile('./My Clippings.txt', 'utf-8', (err, data) => {
   }
   const ctx = new String(data).split('==========');
   for(var i = 0; i<=(ctx.length-2); i++){
-    var title = new String(ctx[i]).split("(")[0]
-    var author = new String(ctx[i]).split("(")[2].split(")")[0]
-    var dataAddet = new String(ctx[i]).split("|")[2].split("\n")[0]
-    if(new String(ctx[i]).split(":")[3] != undefined){
+    var ctn = String(ctx[i]).replace("(German Edition) ")
+    var title = new String(ctn).split("(")[0]
+    var author = new String(ctn).split("(")[2].split(")")[0]
+    var dataAddet = new String(ctn).split("|")[2].split("\n")[0]
+    if(new String(ctn).split(":")[3] != undefined){
       var clip = new String(ctx[i]).split(":")[3];
     } else {
-      var clip = new String(ctx[i]).split(":")[2]
+      var clip = new String(ctn).split(":")[2]
     }
     var clip = clip.slice(6);
     addEntry(title, clip, author, dataAddet)
